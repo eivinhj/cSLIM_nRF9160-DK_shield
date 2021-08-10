@@ -1,0 +1,177 @@
+EESchema Schematic File Version 4
+LIBS:cSLIM-shield-cache
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 11 11
+Title "cSLIM RTC"
+Date "2021-03-31"
+Rev "v1"
+Comp "NTNU"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 "Eivind Jølsgard"
+$EndDescr
+$Comp
+L SamacSys:RV-3032-C7-TA-QC Y1101
+U 1 1 607532AC
+P 3400 2200
+F 0 "Y1101" H 4100 2465 50  0000 C CNN
+F 1 "RV-3032-C7-TA-QC" H 4100 2374 50  0000 C CNN
+F 2 "RV3032C7TAQA" H 4650 2300 50  0001 L CNN
+F 3 "https://www.microcrystal.com/fileadmin/Media/Products/RTC/Datasheet/RV-3032-C7.pdf" H 4650 2200 50  0001 L CNN
+F 4 "RV-3032-C7, Real-Time Clock, IC-bus, 3ppm @ 25C -40 to +85C     (SMD 3.2 x 1.5 x 0.8)" H 4650 2100 50  0001 L CNN "Description"
+F 5 "0.8" H 4650 2000 50  0001 L CNN "Height"
+F 6 "Micro Crystal AG" H 4650 1900 50  0001 L CNN "Manufacturer_Name"
+F 7 "RV-3032-C7-TA-QC" H 4650 1800 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "" H 4650 1700 50  0001 L CNN "Mouser Part Number"
+F 9 "" H 4650 1600 50  0001 L CNN "Mouser Price/Stock"
+F 10 "" H 4650 1500 50  0001 L CNN "Arrow Part Number"
+F 11 "" H 4650 1400 50  0001 L CNN "Arrow Price/Stock"
+	1    3400 2200
+	1    0    0    -1  
+$EndComp
+Text HLabel 5400 2200 2    50   Input ~ 0
+SCL
+Text HLabel 2400 2300 0    50   Input ~ 0
+SDA
+$Comp
+L Device:R R1101
+U 1 1 60753CC4
+P 3150 2800
+F 0 "R1101" H 3220 2846 50  0000 L CNN
+F 1 "10k" H 3220 2755 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 3080 2800 50  0001 C CNN
+F 3 "~" H 3150 2800 50  0001 C CNN
+	1    3150 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR01101
+U 1 1 607548DF
+P 3150 2950
+F 0 "#PWR01101" H 3150 2700 50  0001 C CNN
+F 1 "GND" H 3155 2777 50  0000 C CNN
+F 2 "" H 3150 2950 50  0001 C CNN
+F 3 "" H 3150 2950 50  0001 C CNN
+	1    3150 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR01103
+U 1 1 6075570F
+P 4900 2650
+F 0 "#PWR01103" H 4900 2400 50  0001 C CNN
+F 1 "GND" H 4905 2477 50  0000 C CNN
+F 2 "" H 4900 2650 50  0001 C CNN
+F 3 "" H 4900 2650 50  0001 C CNN
+	1    4900 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4800 2500 4900 2500
+Wire Wire Line
+	4900 2500 4900 2650
+Wire Wire Line
+	3400 2200 3150 2200
+Wire Wire Line
+	3150 2200 3150 2650
+Wire Wire Line
+	5400 2200 4800 2200
+Text HLabel 2400 2400 0    50   Input ~ 0
+nINT
+$Comp
+L power:VDD #PWR01102
+U 1 1 60756E47
+P 4900 1900
+F 0 "#PWR01102" H 4900 1750 50  0001 C CNN
+F 1 "VDD" H 4917 2073 50  0000 C CNN
+F 2 "" H 4900 1900 50  0001 C CNN
+F 3 "" H 4900 1900 50  0001 C CNN
+	1    4900 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4800 2400 4900 2400
+Wire Wire Line
+	4900 2400 4900 1900
+Text HLabel 5400 2300 2    50   Input ~ 0
+CLKOUT
+Text HLabel 2400 2500 0    50   Input ~ 0
+EVI
+Wire Wire Line
+	4800 2300 5400 2300
+$Comp
+L Device:R R?
+U 1 1 60A3211D
+P 2900 1950
+AR Path="/6079F951/60A3211D" Ref="R?"  Part="1" 
+AR Path="/606938DB/60A3211D" Ref="R?"  Part="1" 
+AR Path="/60752D54/60A3211D" Ref="R1103"  Part="1" 
+F 0 "R1103" H 2830 1904 50  0000 R CNN
+F 1 "100k" H 2830 1995 50  0000 R CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 2830 1950 50  0001 C CNN
+F 3 "~" H 2900 1950 50  0001 C CNN
+	1    2900 1950
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:VDD #PWR?
+U 1 1 60A32123
+P 2900 1750
+AR Path="/60A32123" Ref="#PWR?"  Part="1" 
+AR Path="/6057D587/60A32123" Ref="#PWR?"  Part="1" 
+AR Path="/60752D54/60A32123" Ref="#PWR01105"  Part="1" 
+F 0 "#PWR01105" H 2900 1600 50  0001 C CNN
+F 1 "VDD" H 2917 1923 50  0000 C CNN
+F 2 "" H 2900 1750 50  0001 C CNN
+F 3 "" H 2900 1750 50  0001 C CNN
+	1    2900 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2900 1750 2900 1800
+Wire Wire Line
+	2900 2100 2900 2400
+Connection ~ 2900 2400
+Wire Wire Line
+	2900 2400 3400 2400
+Wire Wire Line
+	2400 2300 3400 2300
+Wire Wire Line
+	2400 2400 2900 2400
+$Comp
+L Device:R R?
+U 1 1 60B8BB6D
+P 2600 2800
+AR Path="/6079F951/60B8BB6D" Ref="R?"  Part="1" 
+AR Path="/606938DB/60B8BB6D" Ref="R?"  Part="1" 
+AR Path="/60752D54/60B8BB6D" Ref="R1102"  Part="1" 
+F 0 "R1102" H 2530 2754 50  0000 R CNN
+F 1 "100k" H 2530 2845 50  0000 R CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 2530 2800 50  0001 C CNN
+F 3 "~" H 2600 2800 50  0001 C CNN
+	1    2600 2800
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2400 2500 2600 2500
+Wire Wire Line
+	2600 2650 2600 2500
+Connection ~ 2600 2500
+Wire Wire Line
+	2600 2500 3400 2500
+$Comp
+L power:GND #PWR01104
+U 1 1 60B8C2D5
+P 2600 2950
+F 0 "#PWR01104" H 2600 2700 50  0001 C CNN
+F 1 "GND" H 2605 2777 50  0000 C CNN
+F 2 "" H 2600 2950 50  0001 C CNN
+F 3 "" H 2600 2950 50  0001 C CNN
+	1    2600 2950
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

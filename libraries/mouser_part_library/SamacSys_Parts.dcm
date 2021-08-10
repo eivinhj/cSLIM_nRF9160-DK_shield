@@ -1,0 +1,315 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP NE555DR
+D Single Precision Timer
+K
+F http://www.ti.com/lit/ds/symlink/ne555.pdf
+$ENDCMP
+#
+$CMP LSF0108QPWRQ1
+D Automotive 8-Channel Bidirectional Multi-Voltage-Level Translator
+K
+F http://www.ti.com/lit/gpn/lsf0108-q1
+$ENDCMP
+#
+$CMP TXB0108PWR
+D 8-Bit Bidirectional Voltage-Level Shifter with Auto Direction Sensing and +/-15-kV ESD Protect
+K
+F http://www.ti.com/lit/ds/symlink/txb0108.pdf
+$ENDCMP
+#
+$CMP ABS07W-32.768kHz-D-1-T
+D Abracon 32.768kHz Crystal 2-SMD, No Lead 3.2 x1.5 x 0.9mm
+K
+F https://abracon.com/iotoptimized_quartzcrystals/assets/ABS07W.pdf
+$ENDCMP
+#
+$CMP MC7805CTG
+D Voltage regulator,MC7805CT 5V 1A ON Semiconductor MC7805CTG, Single Linear Voltage Regulator, 1A 5 V, +/-4%, 3-Pin TO-220
+K
+F http://www.onsemi.com/pub/Collateral/MC7800-D.PDF
+$ENDCMP
+#
+$CMP EXB-A10P331J
+D Resistor Networks & Arrays Resistor ArrayChip 8 elements
+K
+F https://componentsearchengine.com/Datasheets/1/EXB-A10P331J.pdf
+$ENDCMP
+#
+$CMP LM3671MF-1.8_NOPB
+D 2MHz, 600mA Step-Down DC-DC Converter
+K
+F http://www.ti.com/lit/ds/symlink/lm3671.pdf
+$ENDCMP
+#
+$CMP MC7805ABTG
+D Voltage Regulator 1A 5V 2% 35Vin TO-220 ON Semiconductor MC7805ABTG, Single Linear Voltage Regulator, 1A 5 V, +/-2%, 3-Pin TO-220
+K
+F http://www.onsemi.com/pub/Collateral/MC7800-D.PDF
+$ENDCMP
+#
+$CMP B4B-PH-K-S_LF__SN_
+D PH-2.0mm Header top entry 4 way JST PH Series, Series Number B4B, 2mm Pitch 4 Way 1 Row Straight PCB Header, Through Hole Termination, 2A
+K
+F 
+$ENDCMP
+#
+$CMP B3B-PH-K-S_LF__SN_
+D WIRE-BOARD CONNECTOR, HEADER, 3 POSITION, 2MM; Pitch Spacing:2mm; No. of Contacts:3Contacts; Gender:Header; Product Range:PH Series; Contact Termination Type:Crimp; No. of Rows:1Rows; Contact Plating:Tin Plated Contacts RoHS Compliant: Yes
+K
+F http://www.jst-mfg.com/product/pdf/eng/ePH.pdf
+$ENDCMP
+#
+$CMP BM04B-SRSS-TB_LF__SN_
+D JST (JAPAN SOLDERLESS TERMINALS) - BM04B-SRSS-TB(LF)(SN) - HEADER, TOP ENTRY, 4WAY
+K
+F http://www.jst.fr/core/file.get?path=doc/jst/family/pdf/eSH.pdf
+$ENDCMP
+#
+$CMP PRT-08506
+D SparkFun Accessories 2x5 Pin Shrouded Header
+K
+F https://www.sparkfun.com/datasheets/Prototyping/Shrouded-10pin.pdf
+$ENDCMP
+#
+$CMP 207478-1002
+D Power to the Board L1NK 396 HDR VRT UNSHRD 2CKT W/PG Sn
+K
+F https://componentsearchengine.com/Datasheets/1/207478-1002.pdf
+$ENDCMP
+#
+$CMP 104031-0811
+D microSD 1.10mm SMT push-pull memory card microSD 1.10mm SMT push-pull memory card
+K
+F http://www.molex.com/webdocs/datasheets/pdf/en-us/1040310811_MEMORY_CARD_SOCKET.pdf
+$ENDCMP
+#
+$CMP 691214110002
+D 3.5MM HORIZONTAL ENTRY MODULAR WITH RISING CAGE CLAMP - WR-TBL, 2 pos
+K
+F 
+$ENDCMP
+#
+$CMP WLR089U0-I_RM
+D RF Modules Ultra-low power Long range LoRa module (863-928 MHz)
+K
+F https://ww1.microchip.com/downloads/en/DeviceDoc/WLR089U0-Low-Power-LoRa-Sub-GHz-Module-Data-Sheet-DS70005435A.pdf
+$ENDCMP
+#
+$CMP MAX3486ESA+
+D MAX3486ESA+, Line Transceiver, RS-485, RS-422 2.5Mbit/s Differential, 3.3 V, 8-Pin SOIC
+K
+F http://datasheets.maximintegrated.com/en/ds/MAX3483-MAX3491.pdf
+$ENDCMP
+#
+$CMP BM04B-ZESS-TBT__LF__SN_
+D JST ZE Series, Series Number BM04B, 1.5mm Pitch 4 Way 1 Row Straight PCB Header, SMT Termination, 2A
+K
+F http://www.jst-mfg.com/product/pdf/eng/eZE.pdf
+$ENDCMP
+#
+$CMP BM05B-ZESS-TBT__LF__SN_
+D ZE-1.5mm SMT taped 5way Header+suction JST ZE Series, Series Number BM0B, 1.5mm Pitch 5 Way 1 Row Shrouded Straight PCB Header, Surface Mount
+K
+F https://www.arrow.com/en/products/bm05b-zess-tbt-lf-sn/jst-manufacturing
+$ENDCMP
+#
+$CMP MAX3471EUA+
+D Single Transmitter/Receiver RS-422/485
+K
+F 
+$ENDCMP
+#
+$CMP MAX3221CUE+
+D MAX3221CUE+, Line Transceiver 1 1 1 235 kbit/s, 3  5.5 V, 16-Pin TSSOP
+K
+F http://datasheets.maximintegrated.com/en/ds/MAX3221-MAX3243.pdf
+$ENDCMP
+#
+$CMP TLS_A_070J_LFS
+D Tactile Switches Top actuated tact, 0.9 mm travel, 7 N, 50% Tactile, J Leads, SMT, 8.6 x 8.4 x 3.95 mm, Soft Actuator
+K
+F https://www.mouser.ph/datasheet/2/60/tls-1846606.pdf
+$ENDCMP
+#
+$CMP SHF-105-01-L-D-SM
+D 10 Position, Dual - Row, Shrouded Terminal Strip, 0.050&quot; pitch
+K
+F http://suddendocs.samtec.com/prints/shf-1xx-01-x-d-xx-xx-mkt.pdf
+$ENDCMP
+#
+$CMP UJ2-MIBH-G-SMT-TR
+D USB Connectors
+K
+F 
+$ENDCMP
+#
+$CMP USBLC6-2SC6
+D TVS Diode Array Uni-Directional USBLC6-2SC6 17V, SOT-23 6-Pin
+K
+F http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/CD00050750.pdf
+$ENDCMP
+#
+$CMP LPS3015-103MRB
+D COILCRAFT - LPS3015-103MRB - INDUCTOR, SHLD, 10UH, 20%, 0.55A, SMD
+K
+F https://www.coilcraft.com/pdfs/lps3015.pdf
+$ENDCMP
+#
+$CMP TPS2113PWR
+D Dual In/Single Out Autoswitching Power MUX, Auto Sw, Adj. Cur Limit, Adj. Vol Threshold, Sw Status
+K
+F http://www.ti.com/lit/ds/symlink/tps2113.pdf
+$ENDCMP
+#
+$CMP Si1308EDL-T1-GE3
+D MOSFET N-Ch 30V 1.5A TrenchFET SC70 Vishay Si1308EDL-T1-GE3 N-channel MOSFET Transistor, 1.5 A, 30 V, 3-Pin SC-70
+K
+F https://componentsearchengine.com/Datasheets/1/SI1308EDL-T1-GE3.pdf
+$ENDCMP
+#
+$CMP SFV24R-1STE1HLF
+D AMPHENOL ICC (FCI) - SFV24R-1STE1HLF - CONN, FFC/FPC, RCPT, 24POS, 0.5MM, SMT
+K
+F 
+$ENDCMP
+#
+$CMP SN74AVC4T774PWR
+D 4-Bit Dual-Supply Bus Transceiver With Configurable Voltage-Level Shifting and 3-State Outputs
+K
+F http://www.ti.com/lit/gpn/sn74avc4t774
+$ENDCMP
+#
+$CMP NX2301P,215
+D MOSFET P-CH -20 V -2 A
+K
+F http://www.nxp.com/documents/data_sheet/NX2301P.pdf
+$ENDCMP
+#
+$CMP CY15B104Q-SXI
+D F-RAM,512KB,SPI,3V,SOIC8 CY15B104Q-SXI Serial-SPI FRAM Memory, 4Mbit, 2  3.6 V 8-Pin SOIC
+K
+F http://www.cypress.com/file/209146/download
+$ENDCMP
+#
+$CMP NEO-M8N-0
+D IC RECEIVER GPS/GNSS 24LCC
+K
+F https://www.u-blox.com/sites/default/files/NEO-M8-FW3_DataSheet_%28UBX-15031086%29.pdf
+$ENDCMP
+#
+$CMP SI1040X-T1-GE3
+D MOSFET -8V Vds V Vgs SC89-6
+K
+F https://www.vishay.com/docs/71809/si1040x.pdf
+$ENDCMP
+#
+$CMP 599-0110-007F
+D Standard LEDs - SMD SMD 0805 RED
+K
+F 
+$ENDCMP
+#
+$CMP 599-0140-007F
+D Standard LEDs - SMD SMD 0805 YELLOW
+K
+F 
+$ENDCMP
+#
+$CMP 599-0191-007F
+D Standard LEDs - SMD SMD 0805 BLUE
+K
+F https://componentsearchengine.com/Datasheets/1/599-0191-007F.pdf
+$ENDCMP
+#
+$CMP 599-0181-007F
+D Standard LEDs - SMD SMD 0805 GREEN
+K
+F 
+$ENDCMP
+#
+$CMP APT2012LZGCK
+D Standard LEDs - SMD 2.0X1.2MM LOW CRNT
+K
+F http://www.kingbrightusa.com/images/catalog/SPEC/APT2012LZGCK.pdf
+$ENDCMP
+#
+$CMP APT2012LVBC_D
+D Standard LEDs - SMD 2.0X1.2MM LOW CRNT
+K
+F https://componentsearchengine.com/Datasheets/1/APT2012LVBC_D.pdf
+$ENDCMP
+#
+$CMP APT2012LSECK_J3-PRV
+D Standard LEDs - SMD 2.0X1.2MM LOW CRNT
+K
+F http://www.kingbrightusa.com/images/catalog/SPEC/APT2012LSECK-J3-PRV.pdf
+$ENDCMP
+#
+$CMP APT2012LSYCK_J3-PRV
+D Standard LEDs - SMD 2.0X1.2MM LOW CRNT
+K
+F http://www.kingbrightusa.com/images/catalog/SPEC/APT2012LSYCK-J3-PRV.pdf
+$ENDCMP
+#
+$CMP CONUFL001-SMD-T
+D RF Connectors / Coaxial Connectors T&R U.FL Straight Surface Mount Jack
+K
+F https://linxtechnologies.com/wp/product/mhf-rf-connectors/
+$ENDCMP
+#
+$CMP 97C02ST
+D 2 Way Surface Mount Slide Switch SPST
+K
+F https://componentsearchengine.com/Datasheets/1/97C02ST.pdf
+$ENDCMP
+#
+$CMP 97C08ST
+D 8 Way Surface Mount Slide Switch SPST
+K
+F http://www.grayhill.com/search/?Keywords=97C08ST
+$ENDCMP
+#
+$CMP RV-3032-C7-TA-QC
+D RV-3032-C7, Real-Time Clock, IC-bus, 3ppm @ 25C -40 to +85C     (SMD 3.2 x 1.5 x 0.8)
+K
+F https://www.microcrystal.com/fileadmin/Media/Products/RTC/Datasheet/RV-3032-C7.pdf
+$ENDCMP
+#
+$CMP 52746-1071
+D 0.5 FPC ZIF Housing Assembly RA 10w Molex FFC/FPC SMT Series 0.5mm Pitch 10 Way 1 Row Right Angle SMT Female FPC Connector
+K
+F http://www.molex.com/pdm_docs/sd/527461071_sd.pdf
+$ENDCMP
+#
+$CMP 10119313-302TLF
+D USB Connectors 10119313-302TLF-MINI USB 6PF VERTICAL TY
+K
+F https://www.arrow.com/en/products/10119313-302tlf/amphenol-fci
+$ENDCMP
+#
+$CMP CY15B108QN-20LPXC
+D Cypress Semiconductor, CY15B108QN-20LPXC
+K
+F https://www.arrow.com/en/products/cy15b108qn-20lpxc/cypress-semiconductor
+$ENDCMP
+#
+$CMP TPS63000DRCTG4
+D HIGH EFFICIENT SINGLE INDUCTOR BUCK-BOOST CONVERTER WITH 1.8-A SWITCHES
+K
+F 
+$ENDCMP
+#
+$CMP PCH1E101MCL4GS
+D Aluminum Organic Polymer Capacitors 100UF     25V ESR=27
+K
+F https://componentsearchengine.com/Datasheets/2/PCH1E101MCL4GS.pdf
+$ENDCMP
+#
+$CMP 1SS390SMFHT2R
+D Diodes - General Purpose, Power, Switching Band Switching Diode EMD2
+K
+F https://componentsearchengine.com/Datasheets/2/1SS390SMFHT2R.pdf
+$ENDCMP
+#
+#End Doc Library

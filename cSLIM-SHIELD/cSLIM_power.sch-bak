@@ -1,0 +1,679 @@
+EESchema Schematic File Version 4
+LIBS:cSLIM-shield-cache
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 6 11
+Title "cSLIM Power"
+Date "2021-03-31"
+Rev "v1"
+Comp "NTNU"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 "Eivind Jølsgard"
+$EndDescr
+$Comp
+L power:+BATT #PWR0601
+U 1 1 6057F283
+P 3300 1150
+F 0 "#PWR0601" H 3300 1000 50  0001 C CNN
+F 1 "+BATT" H 3315 1323 50  0000 C CNN
+F 2 "" H 3300 1150 50  0001 C CNN
+F 3 "" H 3300 1150 50  0001 C CNN
+	1    3300 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R601
+U 1 1 60581E9D
+P 3550 1300
+F 0 "R601" V 3343 1300 50  0000 C CNN
+F 1 "240k" V 3434 1300 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 3480 1300 50  0001 C CNN
+F 3 "~" H 3550 1300 50  0001 C CNN
+	1    3550 1300
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R603
+U 1 1 605826AB
+P 3900 1550
+F 0 "R603" H 3970 1596 50  0000 L CNN
+F 1 "100k" H 3970 1505 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 3830 1550 50  0001 C CNN
+F 3 "~" H 3900 1550 50  0001 C CNN
+	1    3900 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C602
+U 1 1 605827D2
+P 4300 1550
+F 0 "C602" H 4415 1596 50  0000 L CNN
+F 1 "1uF" H 4415 1505 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 4338 1400 50  0001 C CNN
+F 3 "~" H 4300 1550 50  0001 C CNN
+	1    4300 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0602
+U 1 1 60582DFE
+P 3300 1800
+F 0 "#PWR0602" H 3300 1550 50  0001 C CNN
+F 1 "GND" H 3305 1627 50  0000 C CNN
+F 2 "" H 3300 1800 50  0001 C CNN
+F 3 "" H 3300 1800 50  0001 C CNN
+	1    3300 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3900 1700 3300 1700
+Wire Wire Line
+	3300 1700 3300 1800
+Wire Wire Line
+	3900 1400 3900 1300
+Wire Wire Line
+	3900 1300 3700 1300
+Wire Wire Line
+	4300 1400 4300 1300
+Wire Wire Line
+	3400 1300 3300 1300
+Wire Wire Line
+	3300 1300 3300 1150
+Text HLabel 5550 1300 0    50   Input ~ 0
+nRESET
+$Comp
+L Device:C C603
+U 1 1 605856D5
+P 5800 1500
+F 0 "C603" H 5915 1546 50  0000 L CNN
+F 1 "1uF" H 5915 1455 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5838 1350 50  0001 C CNN
+F 3 "~" H 5800 1500 50  0001 C CNN
+	1    5800 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5550 1300 5800 1300
+Wire Wire Line
+	5800 1350 5800 1300
+$Comp
+L SamacSys:TLS_A_070J_LFS S601
+U 1 1 60585E2D
+P 6550 1300
+F 0 "S601" H 6850 1565 50  0000 C CNN
+F 1 "TLS_A_070J_LFS" H 6850 1474 50  0000 C CNN
+F 2 "SamacSys:TLSA070JLFS" H 6850 1100 50  0001 C CNN
+F 3 "https://www.mouser.ph/datasheet/2/60/tls-1846606.pdf" H 6850 1000 50  0001 C CNN
+F 4 "Tactile Switches Top actuated tact, 0.9 mm travel, 7 N, 50% Tactile, J Leads, SMT, 8.6 x 8.4 x 3.95 mm, Soft Actuator" H 6850 900 50  0001 C CNN "Description"
+F 5 "" H 6850 800 50  0001 C CNN "Height"
+F 6 "611-TLSA070JLFS" H 6850 700 50  0001 C CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/CK/TLS-A-070J-LFS?qs=GedFDFLaBXEdAqJ422mDcw%3D%3D" H 6850 600 50  0001 C CNN "Mouser Price/Stock"
+F 8 "C & K COMPONENTS" H 6850 500 50  0001 C CNN "Manufacturer_Name"
+F 9 "TLS A 070J LFS" H 6850 400 50  0001 C CNN "Manufacturer_Part_Number"
+	1    6550 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0606
+U 1 1 60586D19
+P 7150 1300
+F 0 "#PWR0606" H 7150 1050 50  0001 C CNN
+F 1 "GND" H 7155 1127 50  0000 C CNN
+F 2 "" H 7150 1300 50  0001 C CNN
+F 3 "" H 7150 1300 50  0001 C CNN
+	1    7150 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0604
+U 1 1 605871C3
+P 5800 1900
+F 0 "#PWR0604" H 5800 1650 50  0001 C CNN
+F 1 "GND" H 5805 1727 50  0000 C CNN
+F 2 "" H 5800 1900 50  0001 C CNN
+F 3 "" H 5800 1900 50  0001 C CNN
+	1    5800 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5800 1650 5800 1900
+Wire Wire Line
+	3900 1300 4300 1300
+Connection ~ 3900 1300
+Wire Wire Line
+	3900 1700 4300 1700
+Connection ~ 3900 1700
+$Comp
+L Device:R R605
+U 1 1 60584BB4
+P 6300 1300
+F 0 "R605" H 6370 1346 50  0000 L CNN
+F 1 "1k" H 6370 1255 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 6230 1300 50  0001 C CNN
+F 3 "~" H 6300 1300 50  0001 C CNN
+	1    6300 1300
+	0    -1   -1   0   
+$EndComp
+Text Notes 5200 1000 0    50   ~ 0
+RESET button\nThe nRESET pin of the nRF9160 has a 13kOhm internal pull up
+Wire Wire Line
+	6450 1300 6550 1300
+Wire Wire Line
+	6150 1300 5800 1300
+Connection ~ 5800 1300
+Text Notes 3200 900  0    50   ~ 0
+Battery measurement\n
+Text HLabel 5400 6550 2    50   Input ~ 0
+V_reg_3V3
+$Comp
+L Regulator_Switching:TPS63001 U601
+U 1 1 606770FF
+P 3550 6750
+F 0 "U601" H 3550 7417 50  0000 C CNN
+F 1 "TPS63000" H 3550 7326 50  0000 C CNN
+F 2 "Package_SON:Texas_DRC0010J_ThermalVias" H 4400 6200 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tps63000.pdf" H 3250 7300 50  0001 C CNN
+	1    3550 6750
+	1    0    0    -1  
+$EndComp
+$Comp
+L SamacSys:LPS3015-103MRB L601
+U 1 1 60678F49
+P 3150 5900
+F 0 "L601" H 3550 6125 50  0000 C CNN
+F 1 "LPS3015-222MRB" H 3550 6034 50  0000 C CNN
+F 2 "SamacSys:LPS3015" H 3800 5950 50  0001 L CNN
+F 3 "https://www.coilcraft.com/pdfs/lps3015.pdf" H 3800 5850 50  0001 L CNN
+F 4 "COILCRAFT - LPS3015-222MRB - INDUCTOR, SHLD, 7.7UH, 20%, 0.55A, SMD" H 3800 5750 50  0001 L CNN "Description"
+F 5 "" H 3800 5650 50  0001 L CNN "Height"
+F 6 "994-LPS3015-103MRB" H 3800 5550 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/Coilcraft/LPS3015-103MRB?qs=QQJxVsr8EGaKHQsQv461ew%3D%3D" H 3800 5450 50  0001 L CNN "Mouser Price/Stock"
+F 8 "COILCRAFT" H 3800 5350 50  0001 L CNN "Manufacturer_Name"
+F 9 "LPS3015-103MRB" H 3800 5250 50  0001 L CNN "Manufacturer_Part_Number"
+	1    3150 5900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3150 5900 3150 6350
+Wire Wire Line
+	3950 5900 3950 6350
+$Comp
+L power:GND #PWR0607
+U 1 1 6067BC8E
+P 3550 7400
+F 0 "#PWR0607" H 3550 7150 50  0001 C CNN
+F 1 "GND" H 3555 7227 50  0000 C CNN
+F 2 "" H 3550 7400 50  0001 C CNN
+F 3 "" H 3550 7400 50  0001 C CNN
+	1    3550 7400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3450 7350 3450 7400
+Wire Wire Line
+	3550 7350 3550 7400
+Wire Wire Line
+	3550 7400 3450 7400
+Connection ~ 3450 7400
+Wire Wire Line
+	3150 6950 3150 7400
+Wire Wire Line
+	3150 7400 3450 7400
+Text Label 1350 6550 2    50   ~ 0
+V_MUX_OUT
+$Comp
+L Device:C C605
+U 1 1 6067D2BB
+P 1600 6950
+F 0 "C605" H 1715 6996 50  0000 L CNN
+F 1 "10uF" H 1715 6905 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 1638 6800 50  0001 C CNN
+F 3 "~" H 1600 6950 50  0001 C CNN
+	1    1600 6950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C606
+U 1 1 6067DC22
+P 2700 6950
+F 0 "C606" H 2815 6996 50  0000 L CNN
+F 1 "100nF" H 2815 6905 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 2738 6800 50  0001 C CNN
+F 3 "~" H 2700 6950 50  0001 C CNN
+	1    2700 6950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3150 6550 2300 6550
+Wire Wire Line
+	1600 6800 1600 6550
+Connection ~ 1600 6550
+Wire Wire Line
+	1600 6550 1350 6550
+$Comp
+L Device:R R607
+U 1 1 6067F336
+P 2500 6650
+F 0 "R607" H 2570 6696 50  0000 L CNN
+F 1 "100R" H 2570 6605 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 2430 6650 50  0001 C CNN
+F 3 "~" H 2500 6650 50  0001 C CNN
+	1    2500 6650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3150 6750 2950 6750
+Wire Wire Line
+	2950 6750 2950 6650
+Wire Wire Line
+	2950 6650 3150 6650
+Wire Wire Line
+	2300 6650 2300 6550
+Connection ~ 2300 6550
+Wire Wire Line
+	1600 7100 1600 7400
+Connection ~ 3150 7400
+Wire Wire Line
+	2700 7100 2700 7400
+$Comp
+L Device:R R608
+U 1 1 60681D11
+P 4250 6750
+F 0 "R608" H 4320 6796 50  0000 L CNN
+F 1 "1M2" H 4320 6705 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 4180 6750 50  0001 C CNN
+F 3 "~" H 4250 6750 50  0001 C CNN
+	1    4250 6750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R609
+U 1 1 6068254A
+P 4250 7150
+F 0 "R609" H 4320 7196 50  0000 L CNN
+F 1 "240k" H 4320 7105 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 4180 7150 50  0001 C CNN
+F 3 "~" H 4250 7150 50  0001 C CNN
+	1    4250 7150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 7100 5100 7400
+Wire Wire Line
+	5100 6800 5100 6550
+Connection ~ 3550 7400
+Wire Wire Line
+	4250 7300 4250 7400
+Connection ~ 4250 7400
+Wire Wire Line
+	4250 7400 3550 7400
+Wire Wire Line
+	4250 7000 4250 6950
+Wire Wire Line
+	3950 6750 3950 6950
+Wire Wire Line
+	3950 6950 4250 6950
+Connection ~ 4250 6950
+Wire Wire Line
+	4250 6950 4250 6900
+Wire Wire Line
+	4250 6600 4250 6550
+Connection ~ 4250 6550
+Wire Wire Line
+	4250 6550 3950 6550
+$Comp
+L SamacSys:TPS2113PWR IC601
+U 1 1 60691D54
+P 2700 3500
+F 0 "IC601" H 3250 3765 50  0000 C CNN
+F 1 "TPS2113PWR" H 3250 3674 50  0000 C CNN
+F 2 "SamacSys:SOP65P640X120-8N" H 3650 3600 50  0001 L CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tps2113.pdf" H 3650 3500 50  0001 L CNN
+F 4 "Dual In/Single Out Autoswitching Power MUX, Auto Sw, Adj. Cur Limit, Adj. Vol Threshold, Sw Status" H 3650 3400 50  0001 L CNN "Description"
+F 5 "1.2" H 3650 3300 50  0001 L CNN "Height"
+F 6 "595-TPS2113PWR" H 3650 3200 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/TPS2113PWR?qs=ojKcPFmCWSUJzuMPtPVtlA%3D%3D" H 3650 3100 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Texas Instruments" H 3650 3000 50  0001 L CNN "Manufacturer_Name"
+F 9 "TPS2113PWR" H 3650 2900 50  0001 L CNN "Manufacturer_Part_Number"
+	1    2700 3500
+	1    0    0    -1  
+$EndComp
+Text HLabel 1050 3100 0    50   Input ~ 0
+USB_VBUS
+$Comp
+L power:GND #PWR0603
+U 1 1 60693439
+P 3250 4300
+F 0 "#PWR0603" H 3250 4050 50  0001 C CNN
+F 1 "GND" H 3255 4127 50  0000 C CNN
+F 2 "" H 3250 4300 50  0001 C CNN
+F 3 "" H 3250 4300 50  0001 C CNN
+	1    3250 4300
+	1    0    0    -1  
+$EndComp
+NoConn ~ 2700 3500
+Text Label 4600 3600 0    50   ~ 0
+V_MUX_OUT
+$Comp
+L power:+BATT #PWR0605
+U 1 1 606964A5
+P 4350 3050
+F 0 "#PWR0605" H 4350 2900 50  0001 C CNN
+F 1 "+BATT" H 4365 3223 50  0000 C CNN
+F 2 "" H 4350 3050 50  0001 C CNN
+F 3 "" H 4350 3050 50  0001 C CNN
+	1    4350 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3800 3500 3800 3100
+Wire Wire Line
+	2700 3600 2150 3600
+Wire Wire Line
+	2700 3700 2450 3700
+Wire Wire Line
+	2450 3700 2450 3100
+$Comp
+L Device:R R604
+U 1 1 6069D65E
+P 2450 4000
+F 0 "R604" H 2520 4046 50  0000 L CNN
+F 1 "390R" H 2520 3955 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 2380 4000 50  0001 C CNN
+F 3 "~" H 2450 4000 50  0001 C CNN
+	1    2450 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2150 3600 2150 4200
+Wire Wire Line
+	2700 3800 2450 3800
+Wire Wire Line
+	2450 3800 2450 3850
+Wire Wire Line
+	2450 4150 2450 4200
+Wire Wire Line
+	2450 4200 2150 4200
+Wire Wire Line
+	4350 3700 3800 3700
+$Comp
+L Device:R R606
+U 1 1 606A57B0
+P 4500 3250
+F 0 "R606" H 4570 3296 50  0000 L CNN
+F 1 "1M" H 4570 3205 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 4430 3250 50  0001 C CNN
+F 3 "~" H 4500 3250 50  0001 C CNN
+	1    4500 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1050 3100 1300 3100
+Connection ~ 2450 3100
+Wire Wire Line
+	2450 3100 3800 3100
+$Comp
+L Device:C C604
+U 1 1 606A97E2
+P 4850 3250
+F 0 "C604" H 4965 3296 50  0000 L CNN
+F 1 "100nF" H 4965 3205 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 4888 3100 50  0001 C CNN
+F 3 "~" H 4850 3250 50  0001 C CNN
+	1    4850 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4350 3050 4350 3100
+Wire Wire Line
+	4850 3100 4500 3100
+Wire Wire Line
+	4500 3100 4350 3100
+Connection ~ 4500 3100
+Wire Wire Line
+	3800 3800 4500 3800
+Connection ~ 4500 3800
+Wire Wire Line
+	3250 4200 3250 4300
+Connection ~ 2450 4200
+Wire Wire Line
+	4500 4200 4500 3800
+Wire Wire Line
+	2450 4200 3250 4200
+Connection ~ 3250 4200
+Wire Wire Line
+	3250 4200 4500 4200
+$Comp
+L Device:R R602
+U 1 1 606C0465
+P 1300 3250
+F 0 "R602" H 1370 3296 50  0000 L CNN
+F 1 "1M" H 1370 3205 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 1230 3250 50  0001 C CNN
+F 3 "~" H 1300 3250 50  0001 C CNN
+	1    1300 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C601
+U 1 1 606C046B
+P 1650 3250
+F 0 "C601" H 1765 3296 50  0000 L CNN
+F 1 "100nF" H 1765 3205 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 1688 3100 50  0001 C CNN
+F 3 "~" H 1650 3250 50  0001 C CNN
+	1    1650 3250
+	1    0    0    -1  
+$EndComp
+Connection ~ 1300 3100
+Wire Wire Line
+	1300 3100 1650 3100
+Connection ~ 1650 3100
+Wire Wire Line
+	1650 3100 2450 3100
+Connection ~ 4350 3100
+Wire Wire Line
+	4350 3100 4350 3700
+Wire Wire Line
+	4500 3400 4500 3800
+Wire Wire Line
+	4850 3400 4500 3400
+Connection ~ 4500 3400
+Wire Wire Line
+	1300 3400 1650 3400
+Connection ~ 1650 3400
+Wire Wire Line
+	1650 4200 2150 4200
+Wire Wire Line
+	1650 3400 1650 4200
+Connection ~ 2150 4200
+Text Notes 1250 2850 0    50   ~ 0
+Power multiplexer\nSelecting USB when connected
+Text Notes 1800 6000 0    50   ~ 0
+3.3V Buck-Boost Regulator\n
+Text HLabel 5100 3600 2    50   Input ~ 0
+V_MUX_OUT
+$Comp
+L power:PWR_FLAG #FLG0103
+U 1 1 60A56BB4
+P 4050 3500
+F 0 "#FLG0103" H 4050 3575 50  0001 C CNN
+F 1 "PWR_FLAG" H 4050 3673 50  0000 C CNN
+F 2 "" H 4050 3500 50  0001 C CNN
+F 3 "~" H 4050 3500 50  0001 C CNN
+	1    4050 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3800 3600 4050 3600
+Wire Wire Line
+	4050 3500 4050 3600
+Connection ~ 4050 3600
+Wire Wire Line
+	4050 3600 5100 3600
+Text HLabel 4300 1300 2    50   Input ~ 0
+BATT_MEAS
+Text Notes 4350 6300 0    50   ~ 0
+R608 and R609 is not necessary \nwhen using TPS63001 as the output\n voltage is fixed to 3.3V. If another \nvoltage is required use TPS63000\n with appropriate resistor values\n
+Wire Wire Line
+	1600 6550 2300 6550
+Wire Wire Line
+	1600 7400 2700 7400
+Wire Wire Line
+	2700 6650 2700 6800
+Connection ~ 2700 6650
+Wire Wire Line
+	2700 6650 2650 6650
+Connection ~ 2700 7400
+Wire Wire Line
+	2700 7400 3150 7400
+Wire Wire Line
+	2700 6650 2950 6650
+Connection ~ 2950 6650
+Wire Wire Line
+	2350 6650 2300 6650
+$Comp
+L Device:C C607
+U 1 1 60683043
+P 5100 6950
+F 0 "C607" H 5215 6996 50  0000 L CNN
+F 1 "22uF" H 5215 6905 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5138 6800 50  0001 C CNN
+F 3 "~" H 5100 6950 50  0001 C CNN
+	1    5100 6950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C608
+U 1 1 60874331
+P 4600 6750
+F 0 "C608" H 4715 6796 50  0000 L CNN
+F 1 "1.8pF" H 4715 6705 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 4638 6600 50  0001 C CNN
+F 3 "~" H 4600 6750 50  0001 C CNN
+	1    4600 6750
+	1    0    0    -1  
+$EndComp
+Connection ~ 5100 6550
+Wire Wire Line
+	5100 6550 5400 6550
+Wire Wire Line
+	4250 6550 4600 6550
+Wire Wire Line
+	4250 7400 5100 7400
+Wire Wire Line
+	4600 6600 4600 6550
+Connection ~ 4600 6550
+Wire Wire Line
+	4600 6550 5100 6550
+Wire Wire Line
+	4600 6900 4600 6950
+Wire Wire Line
+	4600 6950 4250 6950
+$Comp
+L power:PWR_FLAG #FLG0105
+U 1 1 60C56DF7
+P 2700 6450
+F 0 "#FLG0105" H 2700 6525 50  0001 C CNN
+F 1 "PWR_FLAG" H 2700 6623 50  0000 C CNN
+F 2 "" H 2700 6450 50  0001 C CNN
+F 3 "~" H 2700 6450 50  0001 C CNN
+	1    2700 6450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2700 6650 2700 6450
+$Comp
+L power:+BATT #PWR0608
+U 1 1 6088E2F5
+P 750 900
+F 0 "#PWR0608" H 750 750 50  0001 C CNN
+F 1 "+BATT" H 765 1073 50  0000 C CNN
+F 2 "" H 750 900 50  0001 C CNN
+F 3 "" H 750 900 50  0001 C CNN
+	1    750  900 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0609
+U 1 1 608905B8
+P 750 2200
+F 0 "#PWR0609" H 750 1950 50  0001 C CNN
+F 1 "GND" H 755 2027 50  0000 C CNN
+F 2 "" H 750 2200 50  0001 C CNN
+F 3 "" H 750 2200 50  0001 C CNN
+	1    750  2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L SamacSys:PCH1E101MCL4GS C609
+U 1 1 6089C2A2
+P 750 1100
+F 0 "C609" V 954 1230 50  0000 L CNN
+F 1 "PCH1E101MCL4GS" V 1045 1230 50  0000 L CNN
+F 2 "CAPAE660X840N" H 1100 1150 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/2/PCH1E101MCL4GS.pdf" H 1100 1050 50  0001 L CNN
+F 4 "Aluminum Organic Polymer Capacitors 100UF     25V ESR=27" H 1100 950 50  0001 L CNN "Description"
+F 5 "8.4" H 1100 850 50  0001 L CNN "Height"
+F 6 "647-PCH1E101MCL4GS" H 1100 750 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/Nichicon/PCH1E101MCL4GS?qs=vmHwEFxEFR%252Bar6ugXaASOA%3D%3D" H 1100 650 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Nichicon" H 1100 550 50  0001 L CNN "Manufacturer_Name"
+F 9 "PCH1E101MCL4GS" H 1100 450 50  0001 L CNN "Manufacturer_Part_Number"
+	1    750  1100
+	0    1    1    0   
+$EndComp
+$Comp
+L SamacSys:1SS390SMFHT2R D601
+U 1 1 609227A1
+P 1800 1050
+F 0 "D601" V 2054 1180 50  0000 L CNN
+F 1 "1SS390SMFHT2R" V 2145 1180 50  0000 L CNN
+F 2 "SODFL1608X70N" H 2250 1050 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/2/1SS390SMFHT2R.pdf" H 2250 950 50  0001 L CNN
+F 4 "Diodes - General Purpose, Power, Switching Band Switching Diode EMD2" H 2250 850 50  0001 L CNN "Description"
+F 5 "0.7" H 2250 750 50  0001 L CNN "Height"
+F 6 "755-1SS390SMFHT2R" H 2250 650 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/ROHM-Semiconductor/1SS390SMFHT2R?qs=0lSvoLzn4L%2FO2HkvK5CJsQ%3D%3D" H 2250 550 50  0001 L CNN "Mouser Price/Stock"
+F 8 "ROHM Semiconductor" H 2250 450 50  0001 L CNN "Manufacturer_Name"
+F 9 "1SS390SMFHT2R" H 2250 350 50  0001 L CNN "Manufacturer_Part_Number"
+	1    1800 1050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	750  1100 750  950 
+$Comp
+L Device:R R610
+U 1 1 609345F7
+P 1800 1800
+F 0 "R610" H 1870 1846 50  0000 L CNN
+F 1 "3k" H 1870 1755 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 1730 1800 50  0001 C CNN
+F 3 "~" H 1800 1800 50  0001 C CNN
+	1    1800 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	750  1600 750  2050
+Wire Wire Line
+	1800 1950 1800 2050
+Wire Wire Line
+	1800 2050 750  2050
+Connection ~ 750  2050
+Wire Wire Line
+	750  2050 750  2200
+Wire Wire Line
+	1800 1050 1800 950 
+Wire Wire Line
+	1800 950  750  950 
+Connection ~ 750  950 
+Wire Wire Line
+	750  950  750  900 
+Text Notes 4350 7600 0    50   ~ 0
+Resistor values computed for \n3.0V output with TPS63000
+Text Notes 950  850  0    50   ~ 0
+Capacitor for battery supply\nand diode to protect circuitry \nof wrong polarization 
+$EndSCHEMATC

@@ -1,0 +1,158 @@
+EESchema Schematic File Version 4
+LIBS:cSLIM-shield-cache
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 10 11
+Title "cSLIM FRAM"
+Date "2021-03-31"
+Rev "v1"
+Comp "NTNU"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 "Eivind Jølsgard"
+$EndDescr
+$Comp
+L power:VDD #PWR01003
+U 1 1 60698755
+P 4950 2200
+F 0 "#PWR01003" H 4950 2050 50  0001 C CNN
+F 1 "VDD" H 4967 2373 50  0000 C CNN
+F 2 "" H 4950 2200 50  0001 C CNN
+F 3 "" H 4950 2200 50  0001 C CNN
+	1    4950 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VDD #PWR01001
+U 1 1 60698D66
+P 2400 2200
+F 0 "#PWR01001" H 2400 2050 50  0001 C CNN
+F 1 "VDD" H 2417 2373 50  0000 C CNN
+F 2 "" H 2400 2200 50  0001 C CNN
+F 3 "" H 2400 2200 50  0001 C CNN
+	1    2400 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR01002
+U 1 1 60698EA9
+P 2400 2850
+F 0 "#PWR01002" H 2400 2600 50  0001 C CNN
+F 1 "GND" H 2405 2677 50  0000 C CNN
+F 2 "" H 2400 2850 50  0001 C CNN
+F 3 "" H 2400 2850 50  0001 C CNN
+	1    2400 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R1002
+U 1 1 60699E05
+P 5350 2550
+F 0 "R1002" V 5143 2550 50  0000 C CNN
+F 1 "33R" V 5234 2550 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 5280 2550 50  0001 C CNN
+F 3 "~" H 5350 2550 50  0001 C CNN
+	1    5350 2550
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R1003
+U 1 1 6069A904
+P 5350 2850
+F 0 "R1003" V 5143 2850 50  0000 C CNN
+F 1 "50R" V 5234 2850 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 5280 2850 50  0001 C CNN
+F 3 "~" H 5350 2850 50  0001 C CNN
+	1    5350 2850
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R1001
+U 1 1 6069AB2C
+P 3100 2450
+F 0 "R1001" V 3307 2450 50  0000 C CNN
+F 1 "33R" V 3216 2450 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 3030 2450 50  0001 C CNN
+F 3 "~" H 3100 2450 50  0001 C CNN
+	1    3100 2450
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4950 2200 4950 2350
+Connection ~ 4950 2350
+Wire Wire Line
+	4950 2350 4950 2450
+Wire Wire Line
+	2400 2650 2400 2700
+Wire Wire Line
+	3650 2450 3250 2450
+Text HLabel 2950 2450 0    50   Input ~ 0
+SPI_MISO
+Text HLabel 2900 2350 0    50   Input ~ 0
+SPI_nCS
+Text HLabel 5500 2550 2    50   Input ~ 0
+SPI_SCK
+Text HLabel 5500 2850 2    50   Input ~ 0
+SPI_MOSI
+Wire Wire Line
+	5200 2850 4950 2850
+Wire Wire Line
+	4950 2850 4950 2650
+Wire Wire Line
+	3650 2350 2900 2350
+$Comp
+L Device:C C1001
+U 1 1 6069C46A
+P 2000 2550
+F 0 "C1001" H 2115 2596 50  0000 L CNN
+F 1 "100nF" H 2115 2505 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 2038 2400 50  0001 C CNN
+F 3 "~" H 2000 2550 50  0001 C CNN
+	1    2000 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2400 2550 3650 2550
+Wire Wire Line
+	2400 2650 3650 2650
+Wire Wire Line
+	2000 2700 2400 2700
+Wire Wire Line
+	2000 2400 2400 2400
+Wire Wire Line
+	2400 2200 2400 2400
+Connection ~ 2400 2400
+Connection ~ 2400 2700
+Wire Wire Line
+	2400 2700 2400 2850
+Wire Wire Line
+	2400 2400 2400 2550
+$Comp
+L SamacSys:CY15B108QN-20LPXC IC1001
+U 1 1 6071B7FA
+P 3650 2350
+F 0 "IC1001" H 4150 2615 50  0000 C CNN
+F 1 "CY15B108QN-20LPXC" H 4150 2524 50  0000 C CNN
+F 2 "SON65P323X328X55-8N" H 4500 2450 50  0001 L CNN
+F 3 "https://www.arrow.com/en/products/cy15b108qn-20lpxc/cypress-semiconductor" H 4500 2350 50  0001 L CNN
+F 4 "Cypress Semiconductor, CY15B108QN-20LPXC" H 4500 2250 50  0001 L CNN "Description"
+F 5 "0.55" H 4500 2150 50  0001 L CNN "Height"
+F 6 "727-CY15B108QN20LPXC" H 4500 2050 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/Cypress-Semiconductor/CY15B108QN-20LPXC?qs=P1JMDcb91o5srFPNWUxrEA%3D%3D" H 4500 1950 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Cypress Semiconductor" H 4500 1850 50  0001 L CNN "Manufacturer_Name"
+F 9 "CY15B108QN-20LPXC" H 4500 1750 50  0001 L CNN "Manufacturer_Part_Number"
+	1    3650 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4650 2350 4950 2350
+Wire Wire Line
+	4650 2450 4950 2450
+Wire Wire Line
+	4650 2550 5200 2550
+Wire Wire Line
+	4650 2650 4950 2650
+$EndSCHEMATC
